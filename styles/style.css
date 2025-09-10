@@ -1,0 +1,679 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* CSS GLOBAL VARIABLES */
+:root {
+  --main-font: 'Be Vietnam Pro', sans-serif;
+  --primary-color: #ff9500;
+  --primary-white: #ffffff;
+}
+
+/* HOMEPAGE STYLES */
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* HEADER */
+header {
+  margin: 16px;
+}
+.top-banner {
+  background-color: var(--primary-color);
+  color: var(--primary-white);
+
+  /* height: 41px; */
+
+  margin-top: 40px;
+  padding: 10px 16px;
+
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-banner p {
+  font-size: 14px;
+  margin-right: 15px;
+  line-height: 150%;
+}
+.top-banner img {
+  height: 12px;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 14px 0;
+  display: flex;
+  gap: 20px;
+}
+.navbar .logo {
+  height: 40px;
+}
+.navbar nav {
+  display: none;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  gap: 10px;
+}
+
+.signup-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  line-height: 150%;
+  font-size: 14px;
+}
+
+.login-btn {
+  background-color: var(--primary-color);
+  color: var(--primary-white);
+
+  border: none;
+  outline: none;
+  border-radius: 6px;
+
+  padding: 12px 20px;
+
+  line-height: 150%;
+  font-size: 14px;
+}
+
+/* HERO SECTION */
+.hero-section {
+  margin: 50px 16px 30px 16px;
+}
+
+.hero-motto {
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+}
+
+.images-container {
+  position: relative;
+  height: 100%;
+}
+
+.lighting-icon {
+  height: 21px;
+}
+
+.lines-icon {
+  height: 43px;
+  position: absolute;
+  top: -50px;
+  left: -40px;
+}
+
+.hero-motto p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.highlight {
+  color: var(--primary-color);
+}
+
+.hero-content {
+  padding: 0 30px;
+  margin-top: 26px;
+  text-align: center;
+}
+
+.hero-content h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.hero-content p {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.hero-btns {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.hero-btn {
+  padding: 14px 20px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.explore-btn {
+  background-color: var(--primary-color);
+  color: var(--primary-white);
+  font-weight: 600;
+}
+
+/* PARTNERS SECTION */
+.partners-section {
+  margin-top: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.partners-section img:nth-child(n + 4) {
+  display: none;
+}
+
+/* VIDEO SECTION */
+.video-section {
+  margin: 60px 16px 50px 16px;
+  position: relative;
+}
+
+.video-thumbnail {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.playBtn-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+/* BENEFITS SECTION */
+.section-header {
+  margin-bottom: 40px;
+}
+.benefits-section {
+  margin: 0 16px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.section-description {
+  margin: 4px 0px 34px 0px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #59595a;
+}
+
+.section-link {
+  padding: 14px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.benefits {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  gap: 20px;
+}
+
+.benefit-card {
+  padding: 30px;
+}
+
+.benefit-number {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.benefit-info {
+  margin: 30px 0px;
+}
+
+.benefit-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.6%;
+  color: #333333;
+}
+
+.benefit-description {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #4c4c4d;
+}
+.benefit-link-container {
+  padding: 14px;
+  width: fit-content;
+  margin-left: auto;
+}
+
+/* COURSES SECTION */
+.courses-section {
+  margin: 50px 16px 50px 16px;
+}
+
+.courses {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  gap: 20px;
+}
+
+.course-card {
+  padding: 24px;
+}
+
+.course-img {
+  width: 100%;
+  height: 172px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tags {
+  margin-top: 24px;
+
+  display: flex;
+  gap: 10px;
+}
+
+.tags p {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #4c4c4d;
+}
+
+.course-author {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.course-title {
+  margin-top: 24px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.course-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  color: #4c4c4d;
+  margin-top: 10px;
+}
+
+.course-link-container {
+  margin-top: 24px;
+  padding: 14px 0px;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-link-container a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #262626;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial-section {
+  margin: 0px 16px 50px 16px;
+}
+
+.testimonial-card {
+  padding: 30px;
+}
+
+.testimonial-text {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #4c4c4d;
+}
+
+.testimonial-info {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonial-person img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #333333;
+}
+
+.testimonial-link {
+  padding: 14px 16px;
+}
+
+.testimonial-link a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #262626;
+}
+
+/* PRICING SECTION */
+.pricing-section {
+  margin: 0px 16px 50px 16px;
+}
+
+.pricing-btns {
+  display: flex;
+  justify-content: center;
+}
+.pricing-btn {
+  padding: 12px 24px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #4c4c4d;
+}
+
+.monthly {
+  background-color: var(--primary-color);
+  color: var(--primary-white);
+  border-radius: 6px;
+}
+
+.pricing-card {
+  padding: 30px 20px;
+}
+
+.category {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 169%;
+  color: #262626;
+
+  text-align: center;
+  padding: 8px 22px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 73%;
+  color: #262626;
+}
+.price p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #4c4c4d;
+}
+
+.features {
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.features h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #262626;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature {
+  padding: 12px;
+  display: flex;
+  align-items: flex-start;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #4C4C4D;
+}
+
+.feature img {
+  margin-right: 8px;
+}
+
+.feature-link-container{
+    padding: 18px 24px;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.feature-link-container a{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--primary-white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------Media Queries----------------- */
+/* ----------------- b) iPads, Tablets – 481px—768px ----------------- */
+@media (min-width: 768px) {
+}
+
+/* ----------------- c) Small screens, laptops – 769px—1024px ----------------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* ----------------- d) Desktops, large screens – 1025px—1200px ----------------- */
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
+
+/* ----------------- e) Extra large screens, TV – 1201px+ ----------------- */
+@media (min-width: 1201px) {
+}
+
+/*-----------------End of Media Queries----------------- */
