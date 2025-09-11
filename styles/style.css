@@ -647,8 +647,192 @@ header {
 }
 
 
+/* Q&A SECTIONS */
+.q-section{
+  padding: 24px;
+}
+
+.questions{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+
+.question-card{
+  padding: 24px;
+}
+
+.question-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.question{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #262626;
+
+  flex: 0.8;
+}
+
+.toggle-icon{
+  width: 12px;
+}
+
+.toggle-icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #FFF4E5;
+}
+
+.answer{
+  margin: 20px 0;
+
+  color: #4C4C4D;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.question-link-container{
+  padding: 12px 20px;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question-link-container a{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333333;
+}
+
+.questions .question-card:nth-child(n+2) .answer-container{
+  display: none;
+}
+
+.active .toggle-icon{
+  transform: rotate(45deg);
+}
 
 
+
+/* FOOTER SECTION */
+footer{
+  margin-top: 50px;
+  padding: 50px 20px 24px 20px
+}
+
+.footer-logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo{
+  height: 44px;
+}
+
+.social-links{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link-icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 24px;
+}
+
+.link img{
+  height: 21px;
+}
+
+.link a{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  color: #262626;
+
+  display: flex;
+  align-items: center;
+}
+
+.footer-links{
+  margin-top: 24px;
+  display: flex;
+  gap: 30px;
+}
+
+.link-category h3{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+
+  color: #262626;
+  margin-bottom: 10px;
+}
+
+.link-category ul a{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #59595A;
+}
+
+.social-media{
+  margin-top: 24px;
+}
+
+.social-media h2{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #262626;
+}
+
+.social-media div{  
+  display: flex;
+  gap: 14px;
+}
+
+.social-media img{
+  width: 20px;
+}
+
+.social-media-link-container{
+  margin-top: 10px;
+  padding: 12px;
+}
+
+
+.footer-bottom{
+  margin-top: 40px;
+}
+
+.footer-bottom p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #656567;
+  text-align: center;
+}
 
 
 
