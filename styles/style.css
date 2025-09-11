@@ -313,12 +313,14 @@ header {
 /* VIDEO SECTION */
 .video-section {
   margin: 60px 16px 50px 16px;
+  max-width: 1596px;
   position: relative;
 }
 
 .video-thumbnail {
   width: 100%;
   border-radius: 16px;
+  max-width: 1596px;
 }
 
 .playBtn-container {
@@ -340,7 +342,10 @@ header {
 /* BENEFITS SECTION */
 .section-header {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
+
 .benefits-section {
   margin: 0 16px;
 }
@@ -355,6 +360,7 @@ header {
   margin: 4px 0px 34px 0px;
   font-size: 14px;
   line-height: 150%;
+  max-width: 933px;
   color: #59595a;
 }
 
@@ -373,6 +379,7 @@ header {
 
 .benefit-card {
   padding: 30px;
+  max-width: 520px;
 }
 
 .benefit-number {
@@ -419,6 +426,7 @@ header {
 
 .course-card {
   padding: 24px;
+  max-width: 780px;
 }
 
 .course-img {
@@ -426,6 +434,11 @@ header {
   height: 172px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.course-info{
+  display: flex;
+  flex-direction: column;
 }
 
 .tags {
@@ -490,8 +503,15 @@ header {
   margin: 0px 16px 50px 16px;
 }
 
+.testimonials{
+  display: grid;
+  grid-template: 1fr / 1fr;
+  gap: 20px;
+}
+
 .testimonial-card {
   padding: 30px;
+  max-width: 780px;
 }
 
 .testimonial-text {
@@ -545,10 +565,19 @@ header {
   margin: 0px 16px 50px 16px;
 }
 
+.pricings{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
 .pricing-btns {
   display: flex;
   justify-content: center;
 }
+
 .pricing-btn {
   padding: 12px 24px;
 
@@ -566,6 +595,7 @@ header {
 
 .pricing-card {
   padding: 30px 20px;
+  max-width: 700px;
 }
 
 .category {
@@ -650,12 +680,15 @@ header {
 /* Q&A SECTIONS */
 .q-section{
   padding: 24px;
+  margin: 0px 16px;;
 }
 
 .questions{
   display: flex;
   flex-direction: column;
   gap:30px;
+
+  max-width: 867px;
 }
 
 .question-card{
@@ -725,7 +758,12 @@ header {
 /* FOOTER SECTION */
 footer{
   margin-top: 50px;
-  padding: 50px 20px 24px 20px
+  padding: 50px 20px 24px 20px;
+}
+
+.footer-top{
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-logo-container{
@@ -837,27 +875,234 @@ footer{
 
 
 
-
-
-
-
-
-
 /*-----------------Media Queries----------------- */
 /* ----------------- b) iPads, Tablets – 481px—768px ----------------- */
-@media (min-width: 768px) {
+@media (min-width: 481px) {
+  .hero-motto p {
+    font-size: 18px;
+  }
+
+  .partners-section img:nth-child(-n+5) {
+    display: block !important;
+  }
+
+  .benefits {
+    grid-template: 1fr / 1fr 1fr;
+  }
+
+  .courses {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    gap: 20px;
+  }
+
+  .footer-top{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-menus{
+    flex-direction: column;
+  }
 }
 
 /* ----------------- c) Small screens, laptops – 769px—1024px ----------------- */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) {
+  .navbar .logo {
+    height: 44px;
+    margin-right: 50px;
+  }
+
+  .navbar nav {
+    display: flex;
+  }
+
+  .navbar nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 26px;
+  }
+
+  .navbar nav ul li{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #262626;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+
+  .hero-content{
+    margin-top: 16px;
+  }
+
+  .hero-motto p {
+    font-size: 22px;
+  }
+  
+  .hero-content h3 {
+    font-size: 30px;
+  }
+
+  .hero-content p {    
+    font-size: 16px;
+  }
+
+  .partners-section img {
+    display: block !important;
+  }
+
+  .testimonials{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    gap: 20px;
+  }
+
+  .testimonial-text{
+    min-height: 80px;
+  }
+
+  .pricings{
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .features{
+    min-height: 620px;
+  }
+
+  .footer-menus{
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 /* ----------------- d) Desktops, large screens – 1025px—1200px ----------------- */
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media (min-width: 1025px) {
+  .navbar{
+    padding: 14px 60px;
+  }
+
+  section{
+    padding: 0 60px !important;
+  }
+
+  .hero-section{
+    margin-top: 80px;
+  }
+  .hero-motto p {
+    font-size: 36px;
+  }
+  
+  .hero-content h3 {
+    font-size: 28px;
+  }
+
+  .hero-content p {    
+    font-size: 16px;
+  }
+
+  .hero-btn{
+    min-width: 154px;
+  }
+
+  .partners-section{
+    margin-top: 100px;
+    gap: 60px;
+  }
+
+  .video-section{
+    margin-top: 80px;
+  }
+
+  .benefits-section{
+    margin-top: 100px;
+  }
+
+  .section-title{
+    font-size: 38px;
+  }
+
+  .section-description{
+    font-size: 16px;
+  }
+
+  .benefit-number{
+    font-size: 60px;
+  }
+
+  .benefit-description {
+    font-size: 16px;
+  }
+
+  .courses-section{
+    margin-top: 100px;
+  }
+
+  .course-info{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .course-author{
+    margin-top: 24px;
+  }
+
+  .course-title{
+    font-size:20px;
+  }
+  .course-description{
+    font-size: 16px;
+    min-height: 100px;
+  }
+
+  .testimonial-section{
+    margin-top: 100px;
+  }
+
+  .testimonial-text{
+    font-size: 16px;
+  }
+
+  .pricing-section{
+    margin-top: 100px;
+  }
+
+  .category{
+    font-size: 18px;
+  }
+
+  .price{
+    font-size: 60px;
+  }
+
+  .q-section{
+    margin-top: 100px;
+  }
+
+  footer{
+    margin-top: 100px;
+    padding: 0 60px !important;
+  }
+  .footer-menus{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.6;
+  }
+  .footer-links{
+    gap: 60px; 
+    flex-shrink: 1;
+  }
 }
 
 /* ----------------- e) Extra large screens, TV – 1201px+ ----------------- */
 @media (min-width: 1201px) {
+  
 }
 
 /*-----------------End of Media Queries----------------- */
