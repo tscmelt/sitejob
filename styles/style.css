@@ -156,8 +156,6 @@ header {
   background-color: var(--primary-color);
   color: var(--primary-white);
 
-  /* height: 41px; */
-
   margin-top: 40px;
   padding: 10px 16px;
 
@@ -305,7 +303,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 50px;
 }
 
 .partners-section img:nth-child(n + 4) {
@@ -450,6 +448,8 @@ header {
   font-size: 16px;
   font-weight: 500;
   line-height: 100%;
+
+  color: #262626;
 }
 
 .course-title {
