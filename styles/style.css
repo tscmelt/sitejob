@@ -146,6 +146,7 @@ body {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #262626;
 }
 
 /* HEADER */
@@ -315,12 +316,15 @@ header {
   margin: 60px 16px 50px 16px;
   max-width: 1596px;
   position: relative;
+  max-height: 790px;
 }
 
 .video-thumbnail {
   width: 100%;
-  border-radius: 16px;
+  border-radius: 10px;
   max-width: 1596px;
+  max-height: 790px;
+  object-fit: cover;
 }
 
 .playBtn-container {
@@ -336,7 +340,7 @@ header {
   align-items: center;
 
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 16px;
+  border-radius: 10px;
 }
 
 /* BENEFITS SECTION */
@@ -1016,7 +1020,8 @@ footer{
   }
 
   .video-section{
-    margin-top: 80px;
+    margin: 80px 76px 0px 76px;
+    padding: 0 !important;
   }
 
   .benefits-section{
@@ -1091,7 +1096,7 @@ footer{
   }
   .footer-menus{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex: 0.6;
   }
   .footer-links{
@@ -1102,7 +1107,445 @@ footer{
 
 /* ----------------- e) Extra large screens, TV – 1201px+ ----------------- */
 @media (min-width: 1201px) {
-  
+  .top-banner {
+    margin-top: 20px;
+    padding: 10px 14px;
+  }
+
+  .top-banner p {
+    font-size: 18px;
+    margin-right: 23px;
+  }
+
+  .top-banner img {
+    height: 16px;
+  }
+
+
+
+  .navbar {
+    padding: 20px 132px 24px 132px;
+    gap: 20px;
+  }
+  .navbar .logo {
+    height: 54px;
+  }
+
+  .auth-buttons {
+    gap: 30px;
+  }
+
+  .signup-btn {
+    font-size: 18px;
+  }
+
+  .login-btn {
+    padding: 14px 34px;
+
+    font-size: 18px;
+  }
+
+  .navbar nav ul li{
+    font-size: 18px;
+  }
+
+
+  section{
+    padding: 0 132px !important;
+  }
+
+
+  /* HERO SECTION */
+  .hero-motto {
+    padding: 14px 30px 14px 20px;
+  }
+
+  .images-container {
+    position: relative;
+    height: 100%;
+  }
+
+  .lighting-icon {
+    height: 30px;
+  }
+
+  .hero-motto p {
+    font-size: 48px;
+  }
+
+  .hero-content {
+    padding: 0 30px;
+    margin-top: 20px;
+  }
+
+  .hero-content h3 {
+    font-size: 38px;
+  }
+
+  .hero-content p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .hero-btns {
+    margin-top: 60px;
+  }
+
+  .hero-btn {
+    padding: 18px 24px;
+    font-size: 18px;
+  }
+
+  .partners-section {
+    gap: 130px;
+    flex-wrap: wrap;
+  }
+
+  .partners-section img {
+    height: 30px;
+  }
+
+  .video-section{
+    margin: 100px 132px 0px 132px;
+  }
+
+
+  .benefits-section {
+    margin-top: 150px;
+  }
+  .section-header {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 48px;
+  }
+
+  .section-description {    
+    font-size: 18px;
+  }
+
+  .section-link {
+    padding: 18px 24px;
+    font-size: 18px;
+    align-self: flex-end;
+  }
+
+  .benefits {
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 50px;
+  }
+
+  .benefit-card {
+    padding: 50px;
+  }
+
+  .benefit-number {
+    font-size: 80px;
+    text-align: right;
+  }
+
+  .benefit-info {
+    margin: 50px 0px;
+  }
+
+  .benefit-title {
+    font-size: 24px;
+  }
+
+  .benefit-description {
+    margin-top: 14px;
+    font-size: 18px;
+  }
+
+  .benefit-link-container {
+    padding: 20px;
+  }
+
+  .benefit-link-container img{
+    height: 17px;
+  }
+
+  .courses {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    gap: 20px;
+  }
+
+  .course-card {
+    padding: 50px;
+    max-width: 780px;
+  }
+
+  .course-img {
+    height: 380px;
+  }
+
+  .tags {
+    margin-top: 30px;
+  }
+
+  .tags p {
+    padding: 10px 16px;
+    font-size: 18px;
+  }
+
+  .course-author {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  .course-title {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+
+  .course-description {
+    font-size: 18px;
+    margin-top: 14px;
+  }
+
+  .course-link-container {
+    margin-top: 30px;
+    padding: 18px 24px;
+  }
+  .course-link-container a {
+    font-size: 18px;
+  }
+
+
+  /* TESTIMONIAL SECTION */
+  .testimonials{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 30px;
+  }
+
+  .testimonial-card {
+    padding: 50px;
+  }
+
+  .testimonial-text {
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+
+  .testimonial-person {
+    gap: 15px;
+  }
+
+  .testimonial-person img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonial-name {
+    font-size: 18px;
+  }
+
+  .testimonial-link {
+    padding: 18px 24px;
+  }
+
+  .testimonial-link a {
+    font-size: 18px;
+  }
+
+  .pricing-section {
+    margin-top: 100px;
+  }
+
+  .pricings{
+    flex-direction: row;
+  }
+
+  .pricing-btn {
+    padding: 14px 30px;
+    font-size: 18px;
+  }
+
+  .pricing-card {
+    padding: 50px 30px;
+  }
+
+  .category {
+    font-size: 22px;
+    padding: 12px 22px;
+  }
+
+  .pricing-container {
+    margin-top: 50px;
+  }
+
+  .price {
+    font-size: 80px;
+  }
+
+  .price p {
+    font-size: 20px;
+  }
+
+  .features {
+    margin-top: 50px;
+    padding: 40px;
+  }
+
+  .features h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .feature {
+    padding: 14px;
+    
+    font-size: 18px;
+  }
+
+  .feature img {
+    margin-right: 14px;
+    height: 32px;
+    width: 32px;
+  }
+
+  .feature-link-container{
+      padding: 20px 24px;
+  }
+
+  .feature-link-container a{
+      font-size: 18px;
+  }
+
+  .q-section{
+    margin-top: 150px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 120px;
+  }
+
+  .q-section .section-header{
+    flex-direction: column;
+    flex: 0.7;
+  }
+
+  .q-section .section-link{
+    align-self: flex-start;
+  }
+
+  .questions{
+    gap:50px;
+  }
+
+  .question-card{
+    padding: 30px 50px;
+  }
+
+  .question-header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .question{
+    font-size: 20px;
+    flex: 0.8;
+  }
+
+  .toggle-icon{
+    width: 17px;
+  }
+
+  .toggle-icon-container{
+    padding: 12px;
+  }
+
+  .answer{
+    margin: 50px 0;
+
+    font-size: 18px;
+  }
+
+  .question-link-container{
+    padding: 20px 30px;
+  }
+
+  .question-link-container a{
+    font-size: 18px;
+  }
+
+
+
+
+
+
+  /* FOOTER SECTION */
+  footer{
+    margin-top: 100px;
+    padding: 100px 162px 30px 162px !important;
+  }
+
+  .footer-logo{
+    height: 54px;
+  }
+
+  .social-links{
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .link-icon-container{
+    width: 21px;
+    height: 21px;
+  }
+
+  .link img{
+    height: 21px;
+  }
+
+  .link a{
+    font-size: 18px;
+  }
+
+  .link-category h3{
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .link-category ul a{
+    font-size: 18px;
+  }
+
+  .social-media h2{
+    font-size: 20px;
+  }
+
+  .social-media img{
+    width: 20px;
+  }
+
+  .social-media-link-container{
+    margin-top: 14px;
+    padding: 14px;
+  }
+
+
+  .footer-bottom{
+    margin-top: 100px;
+  }
+
+  .footer-bottom p{
+    font-size: 18px;
+  }
 }
 
 /*-----------------End of Media Queries----------------- */
