@@ -807,14 +807,30 @@ body.no-scroll {
   color: #333333;
 }
 
-.questions .question-card:nth-child(n+2) .answer-container{
-  display: none;
-}
 
 .active .toggle-icon{
   transform: rotate(45deg);
 }
 
+
+.answer-container {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0; 
+  transition: max-height 0.35s ease, padding-top 0.25s ease;
+}
+
+.question-card.active .answer-container {
+  padding-top: 15px;
+}
+
+.toggle-icon {
+  width: 12px;
+  transition: transform 0.25s ease;
+}
+.question-card.active .toggle-icon {
+  transform: rotate(45deg);
+}
 
 
 /* FOOTER SECTION */
