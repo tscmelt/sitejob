@@ -189,6 +189,64 @@ header {
   display: none;
 }
 
+/* BURGER NAV PANEL */
+.navbar nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 90%;
+  height: 100%;
+
+  background-color: orange;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+
+  z-index: 1000;
+}
+
+.navbar nav.active {
+  transform: translateX(0);
+}
+
+.menu-icon{
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  position: relative;  /* обов’язково! */
+  z-index: 10000;
+}
+
+.menu-icon.active{
+  transform: translate(0,-75px) rotate(-90deg);
+  filter: brightness(0) invert(1);
+}
+  
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 .auth-buttons {
   display: flex;
   justify-content: flex-end;
@@ -920,6 +978,14 @@ footer{
 
   .navbar nav {
     display: flex;
+    position: static;      
+    transform: none;       
+    width: auto;           
+    height: auto;          
+    background: transparent; 
+    padding: 0;
+    flex-direction: row;   
+    gap: 26px;
   }
 
   .navbar nav ul {
@@ -929,15 +995,21 @@ footer{
     gap: 26px;
   }
 
-  .navbar nav ul li{
+  .navbar nav ul li a{
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     color: #262626;
   }
 
-  .menu-icon{
-    display: none;
+  .nav-links{
+    margin: 0;
+    flex-direction: row;
+    gap: 26px;
+  }
+
+  .menu-icon {
+    display: none; 
   }
 
   .hero-content{
@@ -1131,6 +1203,10 @@ footer{
     height: 54px;
   }
 
+  .navbar nav ul li a{
+    font-size: 18px;
+  }
+
   .auth-buttons {
     gap: 30px;
   }
@@ -1317,8 +1393,6 @@ footer{
     font-size: 18px;
   }
 
-
-  /* TESTIMONIAL SECTION */
   .testimonials{
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
@@ -1477,12 +1551,6 @@ footer{
     font-size: 18px;
   }
 
-
-
-
-
-
-  /* FOOTER SECTION */
   footer{
     margin-top: 100px;
     padding: 100px 162px 30px 162px !important;
